@@ -1,0 +1,188 @@
+#Copyright notice: Copyright 1997-2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+
+ovf_setup -ungroup_separator { _ }
+
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[1].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[2].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[3].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[4].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[5].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[6].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[7].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[8].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[9].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[10].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[11].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[12].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[13].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[14].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[15].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[16].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[17].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[18].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[19].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[20].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[21].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[22].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[23].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[24].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[25].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[26].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[27].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[28].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[29].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[30].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[31].full_add full_adder full_adder_31 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[1].full_add full_adder_31 full_adder_1 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[10].full_add full_adder_31 full_adder_10 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[11].full_add full_adder_31 full_adder_11 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[12].full_add full_adder_31 full_adder_12 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[13].full_add full_adder_31 full_adder_13 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[14].full_add full_adder_31 full_adder_14 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[15].full_add full_adder_31 full_adder_15 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[16].full_add full_adder_31 full_adder_16 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[17].full_add full_adder_31 full_adder_17 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[18].full_add full_adder_31 full_adder_18 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[19].full_add full_adder_31 full_adder_19 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[2].full_add full_adder_31 full_adder_2 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[20].full_add full_adder_31 full_adder_20 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[21].full_add full_adder_31 full_adder_21 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[22].full_add full_adder_31 full_adder_22 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[23].full_add full_adder_31 full_adder_23 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[24].full_add full_adder_31 full_adder_24 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[25].full_add full_adder_31 full_adder_25 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[26].full_add full_adder_31 full_adder_26 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[27].full_add full_adder_31 full_adder_27 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[28].full_add full_adder_31 full_adder_28 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[29].full_add full_adder_31 full_adder_29 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[3].full_add full_adder_31 full_adder_3 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[30].full_add full_adder_31 full_adder_30 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[4].full_add full_adder_31 full_adder_4 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[5].full_add full_adder_31 full_adder_5 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[6].full_add full_adder_31 full_adder_6 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[7].full_add full_adder_31 full_adder_7 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[8].full_add full_adder_31 full_adder_8 } } 
+ovf_uniquify \
+-module { RCA } \
+{ { rc0[9].full_add full_adder_31 full_adder_9 } } 

@@ -1,0 +1,8 @@
+ncsim: 08.20-s012: (c) Copyright 1995-2009 Cadence Design Systems, Inc.
+ncsim: *E,IONOEN: file does not exist, ./ncsim.tcl.
+ncsim> run
+ASSERT/FAILURE (time 2101050 PS) from process :$PROCESS_006 (architecture WORKLIB.ALU_TB:behavioral)
+tb finished
+Assertion at 2101050 PS + 0
+./ALU_TB.vhdl:144                       assert false report "tb finished" severity failure;
+ncsim> exit

@@ -1,0 +1,10 @@
+DEFINE std       /chalmers/sw/sup/cds/ies-8.20.014/IUS82/tools/inca/files/STD
+DEFINE synopsys  /chalmers/sw/sup/cds/ies-8.20.014/IUS82/tools/inca/files/SYNOPSYS
+DEFINE ieee      /chalmers/sw/sup/cds/ies-8.20.014/IUS82/tools/inca/files/IEEE
+DEFINE ambit     /chalmers/sw/sup/cds/ies-8.20.014/IUS82/tools/inca/files/AMBIT
+DEFINE vital_memory /chalmers/sw/sup/cds/ies-8.20.014/IUS82/tools/inca/files/VITAL_MEMORY
+DEFINE ncutils /chalmers/sw/sup/cds/ies-8.20.014/IUS82/tools/inca/files/NCUTILS
+DEFINE ncinternal /chalmers/sw/sup/cds/ies-8.20.014/IUS82/tools/inca/files/NCINTERNAL
+DEFINE ncmodels /chalmers/sw/sup/cds/ies-8.20.014/IUS82/tools/inca/files/NCMODELS
+DEFINE cds_assertions /chalmers/sw/sup/cds/ies-8.20.014/IUS82/tools/inca/files/CDS_ASSERTIONS
+DEFINE worklib worklib

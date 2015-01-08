@@ -1,0 +1,15 @@
+ncvhdl: 08.20-s012: (c) Copyright 1995-2009 Cadence Design Systems, Inc.
+TOOL:	ncvhdl	08.20-s012: Started on Nov 20, 2013 at 15:30:46 CET
+ncvhdl
+    -messages
+    -linedebug
+    -v93
+    ALU_TB.vhdl
+
+ALU_TB.vhdl:
+	errors: 0, warnings: 0
+WORKLIB.ALU_TB (entity):
+	streams: 1, words: 38
+WORKLIB.ALU_TB:BEHAVIORAL (architecture):
+	streams: 6, words: 7453
+TOOL:	ncvhdl	08.20-s012: Exiting on Nov 20, 2013 at 15:30:47 CET  (total: 00:00:01)

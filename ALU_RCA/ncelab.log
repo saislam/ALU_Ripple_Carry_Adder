@@ -1,0 +1,46 @@
+ncelab: 08.20-s012: (c) Copyright 1995-2009 Cadence Design Systems, Inc.
+TOOL:	ncelab	08.20-s012: Started on Nov 20, 2013 at 15:30:51 CET
+ncelab
+    -messages
+    -v93
+    -access +rwc
+    -timescale 1ns/1ps
+    -sdf_cmd_file sdf.control
+    -sdf_verbose
+    WORKLIB.ALU_TB:BEHAVIORAL
+
+	Elaborating the design hierarchy:
+	Annotating SDF timing data:
+		Compiled SDF file:     alu.sdf.X
+		Log file:              sdf_annotation.log
+		Backannotation scope:  :alu0
+		Configuration file:    
+		MTM control:           MAXIMUM
+		Scale factors:         1:1:1
+		Scale type:            FROM_MTM
+	Annotation completed successfully...
+	Building instance overlay tables: .................... Done
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                    Instances  Unique
+	VHDL Design hierarchy:
+		Components:                 2       1
+		Default bindings:           2       -
+		Processes:                  7       7
+		Signals:                   13      13
+	Verilog Design hierarchy:
+		Modules:                  993      92
+		UDPs:                     171       2
+		Primitives:              2386       5
+		Timing outputs:           979      57
+		Registers:                100       4
+		Scalar wires:            1185       -
+		Cont. assignments:          2      32
+		Pseudo assignments:         1       1
+		Timing checks:            600     101
+		Interconnect:            2772       -
+		Delayed tcheck signals:   200     101
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: WORKLIB.ALU_TB:BEHAVIORAL
+TOOL:	ncelab	08.20-s012: Exiting on Nov 20, 2013 at 15:30:52 CET  (total: 00:00:01)

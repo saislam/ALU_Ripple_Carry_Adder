@@ -1,0 +1,106 @@
+  -----------------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all; 
+use std.textio.all;
+
+--Define Entity
+entity ALU_RCA is
+	port(
+		Clk	: in std_logic;
+		Reset	: in std_logic;
+		A	: in std_logic_vector(31 downto 0);
+		B	: in std_logic_vector(31 downto 0);
+		Op	: in std_logic_vector(3 downto 0);
+		Outs	: out std_logic_vector(31 downto 0));
+end ALU_RCA;
+
+architecture behavioral of ALU_RCA is
+
+component logic_unit is
+	port (	A	: in std_logic_vector(31 downto 0);
+		B	: in std_logic_vector(31 downto 0);
+		Op	: in std_logic_vector(1 downto 0);
+		Outs	: out std_logic_vector(31 downto 0));
+end component logic_unit;
+
+component RCA is
+	port(	A  		: in std_logic_vector(31 downto 0);
+		B  		: in std_logic_vector(31 downto 0);
+		Cin 		: in std_logic;
+		Op		: in std_logic;
+		S  		: out std_logic_vector(31 downto 0);
+		Cout 		: out std_logic;
+		V		: out std_logic);
+end component RCA;
+
+component sltu is
+	port (	V	: in std_logic;
+		Cout	: in std_logic;
+		Sign	: in std_logic;
+		Op	: in std_logic;
+		Outs	: out std_logic_vector(31 downto 0));
+end component sltu;
+
+component shifter is
+	port( 	A	: in std_logic_vector(31 downto 0);
+		B	: in std_logic_vector(4 downto 0);
+		Op	: in std_logic_vector(1 downto 0);
+		Outs	: out std_logic_vector(31 downto 0));
+end component shifter;
+
+signal Areg	: std_logic_vector(31 downto 0);
+signal Breg	: std_logic_vector(31 downto 0);
+signal Bregxor	: std_logic_vector(31 downto 0);
+signal Opreg	: std_logic_vector(3 downto 0);
+signal Outreg	: std_logic_vector(31 downto 0);
+
+signal logicOut	: std_logic_vector (31 downto 0);
+signal addOut	: std_logic_vector (31 downto 0);
+signal sltOut	: std_logic_vector (31 downto 0);
+signal shiftOut	: std_logic_vector (31 downto 0);
+signal Cout, V	: std_logic;
+
+signal Err	: std_logic;
+
+begin
+	inReg : process(Clk, Reset) 
+	begin
+		if rising_edge(Clk) then
+		    if(Reset='1') then
+			Areg <= A;
+			Breg <= B;
+			Opreg <= Op;
+			Outs <= Outreg;
+		    else
+			Areg <= (others=>'0');
+			Breg <= (others=>'0');
+			Opreg <= (others=>'0');
+			Outs <= (others=>'0');
+		    end if;
+		end if;
+	end process inReg;
+
+	bwx0: for I in 0 to 31 generate
+		Bregxor(I) <= Breg(I) xor Opreg(1);			
+	end generate;
+	
+	lu0: logic_unit port map(Areg, Breg, Opreg(1 downto 0), logicOut);
+	au0: RCA port map(Areg, Bregxor, Opreg(1), Opreg(0), addOut, Cout, V);
+	slt0: sltu port map (V, Cout, addOut(31), Opreg(0), sltOut);
+	sft0: shifter port map (Areg, Breg(4 downto 0), Opreg(1 downto 0), shiftOut);
+
+	mux0 : process(addOut, logicOut, Opreg,sltOut,shiftOut)
+	begin
+		case Opreg(3 downto 2) is
+			when "00" => Outreg <= addOut;
+			when "01" => Outreg <= logicOut;
+			when "10" => Outreg <= shiftOut;
+			when "11" => Outreg <= sltOut;
+			when others => Err <= '1';
+		end case;
+	end process mux0;
+
+end behavioral;
+
+
